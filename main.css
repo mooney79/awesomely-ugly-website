@@ -21,7 +21,7 @@ p>span{
 }
 
 #duck{
-    display: block;
+    display: flex;
     float: right;
     animation-duration: 4s;
     animation-iteration-count:infinite;
@@ -39,12 +39,20 @@ p>span{
 
 #star{
     float: left;
+    animation-duration: 1.75s;
+    animation-iteration-count: infinite;
+    animation-name: blinking-text;
+    width: 18vw;
+    padding-right: 80px;
+    margin-left: 40px;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/White_grey_checkerboard.svg/1200px-White_grey_checkerboard.svg.png);
 }
 
 footer>img{
     border:none;
 }
 footer {
+    display: block;
     color: white;
     font-size: 24px;
     position: sticky;
@@ -53,7 +61,7 @@ footer {
     z-index: 99; 
 }
 
-main>button{
+.wrapper1>button{
     background-color: red;
     color: white;
     font-size: 5vh;
@@ -76,12 +84,15 @@ h1 {
     font-size: 10vh;
     color:yellow;
     overflow: hidden;
+    background-color: black;
 }
 
 .blanks {
-    width: 20%;
-    height: 20vh;
+    width: 15%;
+    height: 25vh;
     float: right;
+    margin: 5px;
+    background-color: lightgray;
 }
 
 ::selection{
@@ -92,9 +103,11 @@ aside {
     border: solid 15px yellow;
     float: right;
     width: 35vw;
-    height: 50vh;
+    height: 65vh;
     z-index: 8;
-    
+    background-image: url(https://i.pinimg.com/originals/93/58/29/9358295c5ebe69f14632785f192cf9a5.jpg);
+    padding: 15px;
+    margin-left: 2vw;
 }
 
 table, tr, td{
@@ -151,7 +164,7 @@ span {
 }
 
 img[alt]{
-    color: white;
+    color: red;
     font-size: 1.25em;
 }
 
@@ -166,4 +179,12 @@ img[alt]{
         transform: scaleX(1);
     }
 }
+/*
+top-half{
+    display: flex;
+    flex-direction: column;
+}
 
+.wrapper1, .wrapper2{
+    flex-direction: row;
+}*/
