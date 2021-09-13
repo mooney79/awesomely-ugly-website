@@ -16,16 +16,25 @@ img {
 p>span{
     font-size: 60px;
     color: yellow;
+    background-color: red;
 
 }
 
 #duck{
     display: block;
     float: right;
+    animation-duration: 4s;
+    animation-iteration-count:infinite;
+    animation-name: dancing-duck;
 }
 
 #face{
     float: right;
+    border-radius: 50%;
+}
+
+#face:hover{
+    transform: rotate(45deg);
 }
 
 #star{
@@ -38,13 +47,13 @@ footer>img{
 footer {
     color: white;
     font-size: 24px;
-    position: fixed;
+    position: sticky;
     width: 100%;   
     height: 20vh;
     z-index: 99; 
 }
 
-main~button{
+main>button{
     background-color: red;
     color: white;
     font-size: 5vh;
@@ -54,6 +63,8 @@ main~button{
     border-radius: 50%;
     border: solid black 15px;
     box-shadow: 50px 30px 10px rgb(205, 50, 146);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header {
@@ -64,6 +75,7 @@ h1 {
     text-align: center;
     font-size: 10vh;
     color:yellow;
+    overflow: hidden;
 }
 
 .blanks {
@@ -71,3 +83,87 @@ h1 {
     height: 20vh;
     float: right;
 }
+
+::selection{
+    background-color:mediumseagreen;
+}
+
+aside {
+    border: solid 15px yellow;
+    float: right;
+    width: 35vw;
+    height: 50vh;
+    z-index: 8;
+    
+}
+
+table, tr, td{
+    border: solid 5px black;
+    background-color: white;
+    color: red;
+    font-size: 18pt;
+}
+
+thead {
+    color: red;
+    font-size: 24pt;
+}
+
+
+
+span {
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: blinking-text;
+  }
+    
+  @keyframes blinking-text {
+    0% {
+      visibility: hidden;
+    }
+    50% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+
+  h1 {
+      animation-duration: 8s;
+      animation-iteration-count: infinite;
+      animation-name: marquee;
+  }
+
+  @keyframes marquee{
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 4vh;
+    color:yellow;
+}
+
+img[alt]{
+    color: white;
+    font-size: 1.25em;
+}
+
+@keyframes dancing-duck{
+    0%{
+        transform: scaleX(1);
+    }
+    50%{
+        transform: scaleX(-1);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+
