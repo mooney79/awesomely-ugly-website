@@ -1,7 +1,6 @@
 /*
 I'm a Web Developer Mode
 use a minimum of 10 _different_ html elements
-use a minimum of 10 different css style attributes
 use a minimum of 4 different css selectors
 Use the float property to wrap text around an image
 Add a button to your webpage that swaps out an image when you click it
@@ -21,5 +20,5 @@ const $duck = document.querySelector('#duck');
 const $duckButton = document.querySelector('button');
 $duckButton.addEventListener('click', function (event) {
     $duck.setAttribute('src',"https://upload.wikimedia.org/wikipedia/commons/7/79/Operation_Upshot-Knothole_-_Badger_001.jpg");
-    console.log('Button pushed!');
+    alert('What did you do:!!?');
 })

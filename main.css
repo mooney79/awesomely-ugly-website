@@ -20,7 +20,8 @@ p>span{
 }
 
 #duck{
-    display: inline-block;
+    display: block;
+    float: right;
 }
 
 #face{
@@ -39,6 +40,34 @@ footer {
     font-size: 24px;
     position: fixed;
     width: 100%;   
-    height: auto;
+    height: 20vh;
     z-index: 99; 
+}
+
+main~button{
+    background-color: red;
+    color: white;
+    font-size: 5vh;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    border-radius: 50%;
+    border: solid black 15px;
+    box-shadow: 50px 30px 10px rgb(205, 50, 146);
+}
+
+header {
+    width: 100%
+}
+
+h1 {
+    text-align: center;
+    font-size: 10vh;
+    color:yellow;
+}
+
+.blanks {
+    width: 20%;
+    height: 20vh;
+    float: right;
 }
