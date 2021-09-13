@@ -20,5 +20,25 @@ p>span{
 }
 
 #duck{
-    float:unset;
+    display: inline-block;
+}
+
+#face{
+    float: right;
+}
+
+#star{
+    float: left;
+}
+
+footer>img{
+    border:none;
+}
+footer {
+    color: white;
+    font-size: 24px;
+    position: fixed;
+    width: 100%;   
+    height: auto;
+    z-index: 99; 
 }
