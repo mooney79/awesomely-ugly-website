@@ -1,5 +1,7 @@
 html{
     background-color: purple;
+    background-image: url(https://i.giphy.com/media/xT0xeOgNggk77QLQ6k/giphy.webp);
+    background-size: 10%;
     color: blue;
     font-family: 'Shadows Into Light', cursive;
 }
